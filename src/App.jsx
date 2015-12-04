@@ -43,6 +43,7 @@ export default class App extends React.Component {
             <i
               className="material-icons"
               data-text="remember me"
+              tabIndex="0"
               onClick={this._handleRememberToggle}>
                 { this.state.rememberMe ?
                 "radio_button_checked" : "radio_button_unchecked"

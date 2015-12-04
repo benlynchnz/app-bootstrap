@@ -65,10 +65,15 @@ body {
 
 .item i:hover {
   color: rgba(0,0,0,0.87);
-  transition: color .2s ease;
+  transition: color .3s ease-in;
 }
 
-.item i::after {
+.item i:focus {
+  color: #3498DB;
+  outline: none;
+}
+
+/*.item i::after {
   content: attr(data-text);
   position: absolute;
   left: 5px;
@@ -79,7 +84,7 @@ body {
   color: #fff;
   font-size: 14px;
   z-index: 1;
-}
+}*/
 
 .input {
   background: transparent;
